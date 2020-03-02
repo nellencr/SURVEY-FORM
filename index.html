@@ -9,54 +9,89 @@
 
   <script src="https://kit.fontawesome.com/d4de0f4540.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <title> TRIBUTE-PAGE</title>
+  <title >TRIBUTE-PAGE</title>
 </head>
 
 <body>
   <div id="container">
-    <div id="title">
-      <h1>freeCodeCamp Survey Form</h1>
+     <div class="top">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p>
-    </div>
-    <form action="index.html" id="survey-form">
-
-      <div id="name">
-        <label class="name" for="name-input">Name</label>
-        <br>
-        <input id="name-input" class="name-input" type="text" name="text" placeholder="Enter your name" required>
+     </div>
+   <form action="index.html" id="survey-form">
+      <div class="wrapper">
+         <div class="name1 " >
+            <label class="name" for="name" id="name-label">Name</label><br>
+            <input id="name" class="name-input" type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="name1" id="Email">
+            <label id="email-label" class="name" for="email">Email</label><br>
+            <input id="email" class="name-input" type="email" name="emil-label" placeholder="Enter your email" required>
+          </div>
+          <div class="name1">
+             <label id="number-label" class="name" for="number">Age (optional)</label><br>
+             <input id="number" class="name-input" type="number" name="number-label" min="1" max="10" placeholder="10" required>
+          </div>
+         <div class="name1" id="role">
+            <label class="name" for="role-input">Which option best describes your current role?</label><br>
+            <input id="role-input" class="name-input" type="text" name="text" placeholder="select current role" required>
+         </div>
+        <div class="dropdown">
+           <p>Would you recommend freeCodeCamp to a friend?</p>
+           <input id="recomend" type="radio" name="qs" value="Definately" checked>
+           <label for="recomend">Definitely</label><br>
+           <input type="radio" id="maybe" name="qs" value="maybe">
+           <label for="maybe">Maybe</label><br>
+           <input id="other" type="radio"  name="qs" value="not sure">
+           <label for="other">Not sure</label>
+         </div>
+        <div class="dropdown">
+            <p> What is your favorite feature of freeCodeCamp?</p>
+            <p><select id = "dropdown">
+                    <option value="1">select an option</option>
+                    <option value = "1">challenges</option>
+                    <option value = "2">project</option>
+                    <option value = "3">community</option>
+                   <option value = "4">open source</option>
+                </select>
+             </p>
+            </div>
+            <div class="dropdown">
+              <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+               <input id="one" type="checkbox" class="two" name="one" value="front-end projects">
+               <label for="one"> Font-end Projects</label><br>
+               <input id="two" type="checkbox" class="two" name="one" value="back-end Project">
+               <label for="two"> Back-end Projects</label><br>
+               <input id="three" type="checkbox" class="two" name="three" value="data visualization">
+               <label for="three"> Data Visualisation</label><br>
+               <input id="four" type="checkbox" class="two" name="four" value="challenges">
+               <label for="four"> Challenges</label><br>
+               <input id="five" type="checkbox" class="two" name="five" value="open source">
+               <label for="five"> Open Source Community</label><br>
+               <input id="six" type="checkbox" class="two" name="six" value="gitter">
+               <label for="six"> Gitter help rooms</label><br>
+               <input id="seven" type="checkbox" class="two" name="seven" value="video">
+               <label for="seven"> Video</label><br>
+               <input id="eight" type="checkbox" class="two" name="eight" value="city">
+               <label for="eight"> City meetups</label><br>
+               <input id="nine" type="checkbox" class="two" name="nine" value="wiki">
+               <label for="nine"> Wiki</label><br>
+               <input id="ten" type="checkbox" class="two" name="ten" value="forum">
+               <label for="ten"> forum</label><br>
+               <input id="eleven" type="checkbox" class="two" name="eleven" value="courses">
+               <label for="eleven"> Additional courses</label><br>
+               <input id="twelve" type="checkbox" class="two" name="six" value="gitter">
+               <label for="twelve"> Gitter help rooms</label><br>
+         </div>
+         <div class="dropdown">
+             <p>Any comments or suggestions?</p>
+             <textarea id="comments" name="comment" placeholder="Enter your comment"></textarea>
+          </div>
+      <div>
+          <button  type="submit"   id="submit">submit</button>
       </div>
-    <div id="Email">
-      <label class="email" for="email-input">Email</label>
-      <br>
-      <input id="email-input" class="email-input" type="text" name="text" placeholder="Enter your email" required>
-    </div>
-    <div id="age">
-      <label class="age" for="age-input">Age (optional)</label>
-      <br>
-      <input id="age-input" class="age-input" type="text" name="text" placeholder="Age" required>
-    </div>
-     <div id="role">
-       <label class="rle" for="role-input">Which option best describes your current role?</label>
-       <br>
-       <input id="role-input" class="role-input" type="text" name="text" placeholder="select current role" required>
-     </div>
-     <div class="radio">
- <p>Would you recommend freeCodeCamp to a friend?</p>
- <input type="radio" id="recomend" value="recomendation">
- <label for="recomend">Definitely</label><br>
- <input type="radio" id="maybe" name="maybe" value="maybe">
- <label for="maybe">Maybe</label><br>
- <input type="radio" id="other" name="other" value="other">
- <label for="other">Not sure</label>
-
-
-     </div>
-    
-    
-    
-    
-    
-      </form>
+   </div>
+   </form>
   </div>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
